@@ -2,11 +2,11 @@
 <html lang="en"><head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>logup</title>
+    <title>حجز موعد</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="css\styleregister.css">
+    <link rel="stylesheet" href="\css\styleregister.css">
 </head>
 <body>
     <div class="container-fluid px-1 px-md-5 px-lg-1 px-xl-5 py-5 mx-auto">
@@ -15,7 +15,7 @@
             <div class="col-lg-6">
                 <div class="card1 pb-5">
                     <div class="row px-3 justify-content-center mt-4 mb-5 border-line">
-                        <img src="img\log.png" class="image">
+                        <img src="\img\log.png" class="image">
                     </div>
                 </div>
             </div>
@@ -23,6 +23,10 @@
                 <div class="card2 card border-0 px-4 py-5">
                     <div class="row mb-4 px-3" dir="rtl">
                         <h5 class="mb-0 mr-4 mt-2">حجز موعد</h5>
+                        
+                       
+                    </div>
+                    <div class="row mb-4 px-3" dir="rtl">
                         <h8 class="mb-0 mr-4 mt-2">جميع الحقول التي تحتوي على (*) مطلوبة</h8>
                     </div>
                     <form action="/appointment_request/<%= id %>" method="post">
@@ -47,13 +51,12 @@
                 </div>
             </div>
         </div>
-        <div class="bg-blue py-4">
+        <div class="bg-blue py-4" dir="ltr">
             <div class="row px-3">
-                <small class="ml-4 ml-sm-5 mb-2">Copyright © 2023. All rights reserved.</small>
+                <small class="ml-4 ml-sm-5 mb-2">Copyright &copy; 2023 Bahaa .  All rights reserved.</small>
                 <div class="social-contact ml-4 ml-sm-auto">
-                    <span class="fa fa-facebook mr-4 text-sm"></span>
-                    
-                    <span class="fa fa-twitter mr-4 mr-sm-5 text-sm"></span>
+                    <a  href="https://twitter.com/BahaaBrand" aria-label="Twitter"><i class="fa fa-twitter mr-4 mr-sm-5 text-sm"></i></a>
+                <a  href="https://www.instagram.com/bahaa.brand" aria-label="Instagram"><i class="fa fa-instagram mr-4 mr-sm-5 text-sm"></i></a>
                 </div>
             </div>
         </div>

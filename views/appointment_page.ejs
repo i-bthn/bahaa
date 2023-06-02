@@ -18,20 +18,17 @@
         <link href="css/styles.css" rel="stylesheet" />
     </head>
 
-<body>
+<body dir="rtl">
 
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top header-inner-pages" dir="rtl">
+  <header id="header" class="fixed-top header-inner-pages" dir="ltr">
     <div class="container d-flex align-items-center">
 
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto " href="#hero">الرئيسية</a></li>
-          <li><a class="nav-link scrollto" href="#about">الرئيسية</a></li>
-          <li><form action="/logout?_method=DELETE" method="POST">
-            <button type="submit">تسجيل الخروج</button> 
+      <nav id="navbar" class="navbar" dir="">
+        <form action="/logout?_method=DELETE" method="POST">
+            <button class="btn btn-b text-center" type="submit">تسجيل الخروج</button> 
             </form></li>
-        </ul>
+        
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
@@ -80,7 +77,7 @@
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
-  <footer id="footer" style="background-color:#8FBEE2;">
+  <footer id="footer" style="background-color:#8FBEE2;" dir="ltr">
 
 
     <footer class="footer py-4">

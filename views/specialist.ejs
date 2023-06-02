@@ -18,18 +18,22 @@
         <link href="css/styles.css" rel="stylesheet" />
     </head>
 
-<body>
+<body dir="rtl">
 
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top header-inner-pages" dir="rtl">
+  <header id="header" class="fixed-top header-inner-pages">
     <div class="container d-flex align-items-center">
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto " href="#hero">الرئيسية</a></li>
-          <li><a class="nav-link scrollto" href="#about">الرئيسية</a></li>
-          <li><a class="nav-link scrollto" href="#services">الرئيسية</a></li>
+          <li><a class="nav-link scrollto " href="/">الرئيسية</a></li>
+          <li><a class="nav-link scrollto" href="/specialist">مستشارينا</a></li>
+          <li><a class="nav-link scrollto" href="https://hfqtq0.zid.store/">المتجر</a></li>
         </ul>
+        <div class="btnLogin2">
+          <a class="nav-link" href="/login">تسجيل الدخول كمختص</a>
+      </div>
+
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
@@ -42,8 +46,8 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>المختصيين</h2>
-          <p>مختصين بهاء هم موجودين للاجابة على استفساراتكم</p>
+          <h2>المستشارين</h2>
+          <p>ما لقيت لبس يناسبك؟ احجز موعد مع مستشارينا ونحن نوجد لك الحل </p>
         </div>
 
         <div class="row">
@@ -58,11 +62,11 @@
                 <span> <%= user.major %></span>
                 <p> <%= user.experience %></p>
                 <div class="social">
-                    <a href="<%= user.linkedin %>" class="ri-twitter-fill"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="<%= user.twitter %>" class="ri-facebook-fill"><i class="fab fa-twitter"></i></a>
-                    <a href="<%= user.facebook %>" class="ri-instagram-fill"><i class="fab fa-facebook-f"></i></a>
-                    <div class="row">
-                      <a href="/appointment_request/<%= user.id %>" class="btn btn-purple text-center">حجز موعد</a>
+                    <a href="<%= user.linkedin %>" class="ri-twitter-fill a"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="<%= user.twitter %>" class="ri-facebook-fill a"><i class="fab fa-twitter"></i></a>
+                    <a href="<%= user.facebook %>" class="ri-instagram-fill a"><i class="fab fa-facebook-f"></i></a>
+                    <div class="row btn btn-purple text-center ">
+                      <a href="/appointment_request/<%= user.id %>" class="a2">حجز موعد</a>
                   </div>
                 </div>
               </div>
@@ -79,24 +83,9 @@
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
-  <footer id="footer" style="background-color:#8FBEE2;">
+  <%- include("./layout/footer.ejs") %>
 
-
-    <footer class="footer py-4">
-        <div class="container">
-            <div class="row align-items-center" style="color: black;">
-                <div class="col-lg-4 text-lg-start">Copyright &copy; 2023 Bahaa .  All rights reserved.
-                </div>
-                <div class="col-lg-4 my-3 my-lg-0">
-                    <a class="btn btn-dark btn-social mx-2" href="https://twitter.com/BahaaBrand" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                </div>
-
-                </div>
-            </div>
-        </div>
-    </footer>
-
+    
   <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
